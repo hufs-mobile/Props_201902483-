@@ -68,23 +68,28 @@ const Layout = (props) => {
           <Button title="CHANGE FLEX DIRECTION" 
             onPress={() => changeSetting(flexDirectionIndex, flexDirectionsArray, setFlexDirection)}
           />
+          <Text>             row </Text>
         </View>
         <View style={[styles.buttonView]}>
           <Button title="CHANGE JUSTIFY CONTENT" 
             onPress={() => changeSetting(justifyContentIndex, justifyContents, setJustifyContent)}
           />
+          <Text>             center </Text>
         </View>
         <View style={[styles.buttonView]}>
           <Button title="CHANGE ALIGN ITEMS" 
             onPress={() => changeSetting(alignItemIndex, alignItems, setAlignItem)}/>
+          <Text>            flex-end </Text>        
         </View>
         <View style={[styles.buttonView]}>
           <Button title="CHANGE DIRECTION" 
             onPress={() => changeSetting(wrapIndex, wraps, setWrap)}/>
+          <Text>              rtl  </Text>
         </View>
         <View style={[styles.buttonView]}>
           <Button title="CHAGE FLEX WRAP" 
             onPress={() => changeSetting(aaa, directions, setDirection)}/>
+          <Text>              wrap   </Text>
         </View>
         <View style={[styles.buttonView]}>
           <Button title="ADD SQUARE" 
@@ -127,6 +132,7 @@ const styles = StyleSheet.create({
     width:'50%',
     padding:10
   }
+  
 });
 
 const randomHexColor = () => {
